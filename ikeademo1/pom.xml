@@ -63,7 +63,9 @@
     </dependencyManagement>
     <modules>
         <module>.decisionservice</module>
+        <module>Check Ratios of Totals</module>
         <module>balancer</module>
+        <module>ikea data</module>
     </modules>
 
     <build>

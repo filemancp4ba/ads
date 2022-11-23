@@ -13,7 +13,17 @@
     <dependencies>
         <dependency>
             <groupId>cp4admin.my_ads.ikeademo1</groupId>
+            <artifactId>checkRatiosOfTotals</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cp4admin.my_ads.ikeademo1</groupId>
             <artifactId>balancer</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cp4admin.my_ads.ikeademo1</groupId>
+            <artifactId>ikeaData</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -76,6 +86,9 @@
     </profiles>
 
 
+
+
+
 <build>
         <resources>
             <resource>
@@ -102,7 +115,25 @@
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>cp4admin.my_ads.ikeademo1</groupId>
+                                    <artifactId>checkRatiosOfTotals</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>cp4admin.my_ads.ikeademo1</groupId>
                                     <artifactId>balancer</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>cp4admin.my_ads.ikeademo1</groupId>
+                                    <artifactId>ikeaData</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

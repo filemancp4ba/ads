@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>cp4admin.my_ads.ikeademo1</groupId>
-    <artifactId>balancer</artifactId>
+    <artifactId>checkRatiosOfTotals</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
     <build>
@@ -26,10 +26,10 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>balancer</name>
+                            <name>Check-Ratios-of-Totals</name>
                         </deployment>
                     </deployments>
-                <packageName>cp4admin.my_ads.ikeademo1.balancer</packageName>
+                <packageName>cp4admin.my_ads.ikeademo1.checkratiosoftotals</packageName>
                 </configuration>
             </plugin>
         </plugins>
