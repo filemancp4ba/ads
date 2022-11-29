@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>rebalance</name>
+  <uuid>a0cea117-5e87-4a17-82fb-88fa741cff68</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set 0 to total;
+for each row called item, in the rows of StockTable
+if
+  the ids of Components contain the id of item
+then
+  add the grand total of item to the ;
+else
+  add the grand total of item to the other totals of decision;
+set decision to "move 10 frame from dcg1 to store2" ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

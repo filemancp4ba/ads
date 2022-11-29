@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>b0a69724-865c-4172-97b8-214dc0a44b91</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="StockTable">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="StockTable" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.StockTable"/>
+    </inputData>
+    <decision id="node_1" name="Decision">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.Components" collection="false" name="Components"/>
+                <output bomType="com.ibm.ia.TimePeriod" collection="false" name="Decision"/>
+                <rule defaultRule="false" href="node_1/rebalance.drl" kind="BusinessRule" name="rebalance"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Decision" typeRef="com.ibm.ia.TimePeriod"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Components">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.Components" collection="false" name="Components"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Components" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.Components"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
