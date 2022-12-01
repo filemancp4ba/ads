@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="CJREPLENISH">
+  <name>CJREPLENISH</name>
+  <uuid>dfe41135-0c7d-4624-be0e-d5a49895d035</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#6705aae2-714c-4891-ae61-bd9c23f5a82c"/>
+  <targetRuleProject href="../../CJREPLENISH#5542f2b3-4811-49dd-9845-f5400ac2efaa"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

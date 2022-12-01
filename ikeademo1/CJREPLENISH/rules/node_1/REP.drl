@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>REP</name>
+  <uuid>531c7651-832a-4b27-a984-f9b862a7d10e</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[for each row called itema, in the rows of StockTable:
+-define itembs as all repids in the repids of repcomponents, where the id is the id of itema
+-for each repid called itemb, in itembs:
+
+-define avar as a new ReplenishDecision where 
+	the amount is FindingMax * the ratio of itemb - the grand total of itema , 
+	the item is the id of itema
+
+-add avar to decision;
+
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
