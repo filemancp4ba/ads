@@ -88,5 +88,18 @@
             <requiredInput href="#node_1"/>
         </informationRequirement>
     </decision>
+    <decision id="node_6" name="REPDECISION">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision" collection="true" name="Refine"/>
+                <output bomType="java.lang.String" collection="true" name="REPDECISION"/>
+                <rule defaultRule="false" href="node_6/FINAL.drl" kind="BusinessRule" name="FINAL"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_6_ii" name="REPDECISION" typeRef="java.lang.String[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+    </decision>
 </definitions></definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

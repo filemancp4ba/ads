@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>FINAL</name>
+  <uuid>241ce907-8110-4592-aa48-15e420aecc47</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[for each ReplenishDecision called article, in Refine 
+add "Purchasing " + the item of article + " for amount of " + the amount of article to decision;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
