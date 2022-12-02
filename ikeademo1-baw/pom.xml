@@ -63,7 +63,6 @@
     </dependencyManagement>
     <modules>
         <module>.decisionservice</module>
-        <module>CJREBALANCE</module>
         <module>CJREPLENISH</module>
         <module>Check Ratios of Totals</module>
         <module>balancer</module>

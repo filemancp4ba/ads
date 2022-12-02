@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="CJREBALANCE">
-  <name>CJREBALANCE</name>
-  <uuid>e3ec3efd-1c1f-4557-9ad7-92a06ac36a4c</uuid>
-  <decisionModel href="../rules/decisionModel.dmo#4912008c-2b12-41f2-870f-0cbd89d557c8"/>
-  <targetRuleProject href="../../CJREBALANCE#8ef9962a-3f1b-44bd-95a0-a9ad3a04389a"/>
-</com.ibm.rules.studio.model.decisionservice:Operation>
