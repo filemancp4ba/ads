@@ -13,6 +13,21 @@
     <dependencies>
         <dependency>
             <groupId>cp4admin.my_ads.ikeademo1</groupId>
+            <artifactId>CJREBALANCE</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cp4admin.my_ads.ikeademo1</groupId>
+            <artifactId>CJREBALANCE_DELETE</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cp4admin.my_ads.ikeademo1</groupId>
+            <artifactId>CJREPLENISH</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cp4admin.my_ads.ikeademo1</groupId>
             <artifactId>checkRatiosOfTotals</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
@@ -89,6 +104,13 @@
 
 
 
+
+
+
+
+
+
+
 <build>
         <resources>
             <resource>
@@ -113,6 +135,33 @@
                         </goals>
                         <configuration>
                             <artifactItems>
+                                <artifactItem>
+                                    <groupId>cp4admin.my_ads.ikeademo1</groupId>
+                                    <artifactId>CJREBALANCE</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>cp4admin.my_ads.ikeademo1</groupId>
+                                    <artifactId>CJREBALANCE_DELETE</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>cp4admin.my_ads.ikeademo1</groupId>
+                                    <artifactId>CJREPLENISH</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
                                 <artifactItem>
                                     <groupId>cp4admin.my_ads.ikeademo1</groupId>
                                     <artifactId>checkRatiosOfTotals</artifactId>

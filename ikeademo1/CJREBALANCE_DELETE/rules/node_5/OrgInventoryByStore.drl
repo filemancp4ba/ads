@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>OrgInventoryByStore</name>
+  <uuid>de87802c-3a9a-46fb-a124-ac057948aeb3</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[for each row called item, in the rows of StockTable:
+-for each cell called cellitem, in the cells of item:
+
+-define avar as a new store where 
+	the storeid is the location of cellitem
+
+-define detailvar as a new storedetail where 
+	the id is the id of item , 
+	the amount is the amount of cellitem
+    
+-add detailvar to the storedetails of avar
+    
+-add avar to decision;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

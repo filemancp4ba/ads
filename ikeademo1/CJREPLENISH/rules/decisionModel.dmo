@@ -62,6 +62,7 @@
         </informationRequirement>
     </decision>
     <decision id="node_4" name="FindingMax">
+        <description>finding the max of possible combo number</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="java.lang.Long" collection="true" name="FindingMaxArray"/>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Merger 01</name>
+  <uuid>6a77ef19-1e86-448c-8171-4c0c67dfa47a</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[for each store called itema, in StoreInventories
+if the number of stores in decision > 0
+then
+for each store called itemb, in decision:
+  -define avar as a new storedetail where 
+      the id is 100
+  -add avar to the storedetails of itemb;
+else
+add itema to decision;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

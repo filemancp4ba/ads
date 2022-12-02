@@ -63,6 +63,9 @@
     </dependencyManagement>
     <modules>
         <module>.decisionservice</module>
+        <module>CJREBALANCE</module>
+        <module>CJREBALANCE_DELETE</module>
+        <module>CJREPLENISH</module>
         <module>Check Ratios of Totals</module>
         <module>balancer</module>
         <module>ikea data</module>

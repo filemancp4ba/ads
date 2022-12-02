@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>AllStore</name>
+  <uuid>063ca070-b1ef-4083-b45e-35f3924c8b9e</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[for each row called itema, in the rows of StockTable
+for each cell called itemb, in the cells of itema
+add the location of itemb to decision;
+
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

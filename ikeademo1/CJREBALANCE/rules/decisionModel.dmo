@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
   <name>decisionModel</name>
-  <uuid>b0a69724-865c-4172-97b8-214dc0a44b91</uuid>
+  <uuid>4912008c-2b12-41f2-870f-0cbd89d557c8</uuid>
   <locale>en_US</locale>
   <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
-    <inputData id="node_0" name="StockTable">
+    <inputData id="node_0" name="repcomponents">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents" collection="false" name="repcomponents"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="StockTable" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.StockTable"/>
+        <variable id="node_0_ii" name="repcomponents" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents"/>
     </inputData>
-    <decision id="node_1" name="Decision">
+    <decision id="node_1" name="AllStores">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents" collection="false" name="repcomponents"/>
                 <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
-                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.Components" collection="false" name="Components"/>
-                <output bomType="com.ibm.ia.TimePeriod" collection="false" name="Decision"/>
-                <rule defaultRule="false" href="node_1/rebalance.drl" kind="BusinessRule" name="rebalance"/>
+                <output bomType="java.lang.String" collection="true" name="AllStores"/>
+                <rule defaultRule="false" href="node_1/AllStore.drl" kind="BusinessRule" name="AllStore"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="Decision" typeRef="com.ibm.ia.TimePeriod"/>
+        <variable id="node_1_ii" name="AllStores" typeRef="java.lang.String[]"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
@@ -32,13 +32,54 @@
             <requiredInput href="#node_2"/>
         </informationRequirement>
     </decision>
-    <inputData id="node_2" name="Components">
+    <inputData id="node_2" name="StockTable">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.Components" collection="false" name="Components"/>
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
             </initialization>
         </extensionElements>
-        <variable id="node_2_ii" name="Components" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.Components"/>
+        <variable id="node_2_ii" name="StockTable" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.StockTable"/>
     </inputData>
+    <decision id="node_3" name="Decision 3">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents" collection="false" name="repcomponents"/>
+                <output bomType="java.lang.String" collection="false" name="Decision 3"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="Decision 3" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_4" name="Decision 4">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="false" name="Decision 3"/>
+                <input bomType="java.lang.String" collection="true" name="AllStoresCollection"/>
+                <output bomType="java.lang.String" collection="false" name="Decision 4"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_4_ii" name="Decision 4" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_5" name="AllStoresCollection">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="true" name="AllStores"/>
+                <output bomType="java.lang.String" collection="true" name="AllStoresCollection"/>
+                <rule defaultRule="false" href="node_5/StoreCollection.drl" kind="BusinessRule" name="StoreCollection"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_5_ii" name="AllStoresCollection" typeRef="java.lang.String[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+    </decision>
 </definitions></definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

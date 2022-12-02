@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>b0a69724-865c-4172-97b8-214dc0a44b91</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <decision id="node_1" name="GettingTotalsPerID">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.Components" collection="false" name="Components"/>
+                <output bomType="java.lang.Long" collection="true" name="GettingTotalsPerID"/>
+                <rule defaultRule="false" href="node_1/rebalance.drl" kind="BusinessRule" name="rebalance"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="GettingTotalsPerID" typeRef="java.lang.Long[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Components">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.Components" collection="false" name="Components"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Components" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.Components"/>
+    </inputData>
+    <decision id="node_3" name="GettingRatiosPerId">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.Components" collection="false" name="Components"/>
+                <output bomType="java.lang.Long" collection="true" name="GettingRatiosPerId"/>
+                <rule defaultRule="false" href="node_3/getRatios.drl" kind="BusinessRule" name="getRatios"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="GettingRatiosPerId" typeRef="java.lang.Long[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_4" name="Final">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Long" collection="true" name="GettingTotalsPerID"/>
+                <input bomType="java.lang.Long" collection="true" name="GettingRatiosPerId"/>
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="Merger"/>
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision" collection="true" name="Final"/>
+                <rule defaultRule="false" href="node_4/MOVE.drl" kind="BusinessRule" name="MOVE"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_4_ii" name="Final" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_6"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_5" name="StoreInventories">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="StoreInventories"/>
+                <rule defaultRule="false" href="node_5/OrgInventoryByStore.drl" kind="BusinessRule" name="OrgInventoryByStore"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_5_ii" name="StoreInventories" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_6" name="Merger">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="StoreInventories"/>
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="AllStores"/>
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="Merger"/>
+                <rule defaultRule="false" href="node_6/Merger%2001.drl" kind="BusinessRule" name="Merger"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_6_ii" name="Merger" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_8"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_0" name="StockTable">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="StockTable" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.StockTable"/>
+    </inputData>
+    <decision id="node_8" name="AllStores">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="AllStores"/>
+                <rule defaultRule="false" href="node_8/AllStores.drl" kind="BusinessRule" name="AllStores"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_8_ii" name="AllStores" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

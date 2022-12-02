@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.my_ads.ikeademo1:CJREBALANCE" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.my_ads.ikeademo1.cjrebalance" managingXom="true">
-  <name>CJREBALANCE</name>
-  <uuid>a43a9473-e78c-4d6f-8540-2b9f7c76e371</uuid>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.my_ads.ikeademo1:CJREBALANCE_DELETE" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.my_ads.ikeademo1.cjrebalance" managingXom="true">
+  <name>CJREBALANCE_DELETE</name>
+  <uuid>a66764c2-0abf-4c3d-baa2-84003f9986bc</uuid>
   <locales>en_US</locales>
   <operations operationName="operation">
-    <operation href="operation.dop#e3ec3efd-1c1f-4557-9ad7-92a06ac36a4c"/>
+    <operation href="operation.dop#f301a6c9-3f08-4e80-a10e-a67a2ce09207"/>
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>
