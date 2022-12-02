@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>StoreCollection</name>
+  <uuid>bce34ed3-be18-4b17-8a36-27a9d5b13bc9</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[for each string called item, in AllStores
+if decision do not contain item
+then add item to decision;
+
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

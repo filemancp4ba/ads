@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>6705aae2-714c-4891-ae61-bd9c23f5a82c</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="StockTable">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="StockTable" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.StockTable"/>
+    </inputData>
+    <decision id="node_1" name="RepDecision">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents" collection="false" name="repcomponents"/>
+                <input bomType="java.lang.Long" collection="false" name="FindingMax"/>
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision" collection="true" name="RepDecision"/>
+                <rule defaultRule="false" href="node_1/REP.drl" kind="BusinessRule" name="REP"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="RepDecision" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="repcomponents">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents" collection="false" name="repcomponents"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="repcomponents" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents"/>
+    </inputData>
+    <decision id="node_3" name="FindingMaxArray">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents" collection="false" name="repcomponents"/>
+                <output bomType="java.lang.Long" collection="true" name="FindingMaxArray"/>
+                <rule defaultRule="false" href="node_3/FindingMax.drl" kind="BusinessRule" name="FindingMax"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="FindingMaxArray" typeRef="java.lang.Long[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_4" name="FindingMax">
+        <description>finding the max of possible combo number</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Long" collection="true" name="FindingMaxArray"/>
+                <output bomType="java.lang.Long" collection="false" name="FindingMax"/>
+                <rule defaultRule="false" href="node_4/Max.drl" kind="BusinessRule" name="Max"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_4_ii" name="FindingMax" typeRef="java.lang.Long"/>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_5" name="Refine">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision" collection="true" name="RepDecision"/>
+                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision" collection="true" name="Refine"/>
+                <rule defaultRule="false" href="node_5/REFINE.drl" kind="BusinessRule" name="REFINE"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_5_ii" name="Refine" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

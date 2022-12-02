@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Get ratios of core components to spr combo items</name>
+  <uuid>81804d66-2519-447d-880c-7146f69cc0dd</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[for each number called total, in the core totals of 'Get totals'
+for each number called compare, in the other totals of 'Get totals'
+add total/compare to decision;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

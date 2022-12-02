@@ -1,0 +1,485 @@
+
+package cp4admin.my_ads.ikeademo1.ikeadata;
+
+
+public class Cell
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "cell"
+        property "de.generated" "true"
+{
+    public double amount
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "amount"
+                property update "true";
+    public double id
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "id"
+                property update "true";
+    public string location
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "location"
+                property update "true";
+    public Cell(double amount, double id, string location)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Cell()
+                property "dataio.default" "true";
+}
+
+public class Cjtotals
+        property "ads.typeId" "9"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "cjtotals"
+        property "de.generated" "true"
+{
+    public java.util.List cjtotalses domain 0,* class double
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "cjtotalses"
+                property update "true";
+    public Cjtotals(java.util.List cjtotalses domain 0,* class double)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Cjtotals()
+                property "dataio.default" "true";
+    public void addTo_cjtotalses(double cjtotalses)
+                property collectionAttribute "cjtotalses"
+                property update "true";
+    public void clear_cjtotalses()
+                property collectionAttribute "cjtotalses"
+                property update "true";
+    public void removeFrom_cjtotalses(double cjtotalses)
+                property collectionAttribute "cjtotalses"
+                property update "true";
+    public void set_cjtotalses(java.util.Collection cjtotalses domain 0,* class double)
+                property collectionAttribute "cjtotalses"
+                property update "true";
+}
+
+public class Components
+        property "ads.typeId" "7"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Components"
+        property "de.generated" "true"
+{
+    public java.util.List ids domain 0,* class double
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ids"
+                property update "true";
+    public java.util.List productRatio domain 0,* class double
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "product ratio"
+                property update "true";
+    public Components(java.util.List ids domain 0,* class double, 
+        java.util.List productRatio domain 0,* class double)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Components()
+                property "dataio.default" "true";
+    public void addTo_ids(double ids)
+                property collectionAttribute "ids"
+                property update "true";
+    public void addTo_productRatio(double productRatio)
+                property collectionAttribute "productRatio"
+                property update "true";
+    public void clear_ids()
+                property collectionAttribute "ids"
+                property update "true";
+    public void clear_productRatio()
+                property collectionAttribute "productRatio"
+                property update "true";
+    public void removeFrom_ids(double ids)
+                property collectionAttribute "ids"
+                property update "true";
+    public void removeFrom_productRatio(double productRatio)
+                property collectionAttribute "productRatio"
+                property update "true";
+    public void set_ids(java.util.Collection ids domain 0,* class double)
+                property collectionAttribute "ids"
+                property update "true";
+    public void set_productRatio(java.util.Collection productRatio domain 0,* class double)
+                property collectionAttribute "productRatio"
+                property update "true";
+}
+
+public class CoreComponents
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "CoreComponents"
+        property "de.generated" "true"
+{
+    public java.util.List ids domain 0,* class double
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ids"
+                property update "true";
+    public double productRatio
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "product ratio"
+                property update "true";
+    public CoreComponents(java.util.List ids domain 0,* class double, 
+        double productRatio)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public CoreComponents()
+                property "dataio.default" "true";
+    public void addTo_ids(double ids)
+                property collectionAttribute "ids"
+                property update "true";
+    public void clear_ids()
+                property collectionAttribute "ids"
+                property update "true";
+    public void removeFrom_ids(double ids)
+                property collectionAttribute "ids"
+                property update "true";
+    public void set_ids(java.util.Collection ids domain 0,* class double)
+                property collectionAttribute "ids"
+                property update "true";
+}
+
+public class RatioList
+        property "ads.typeId" "5"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "ratioList"
+        property "de.generated" "true"
+{
+    public string location
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "location"
+                property update "true";
+    public java.util.List ratios domain 0,* class double
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ratios"
+                property update "true";
+    public RatioList(string location, 
+        java.util.List ratios domain 0,* class double)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public RatioList()
+                property "dataio.default" "true";
+    public void addTo_ratios(double ratios)
+                property collectionAttribute "ratios"
+                property update "true";
+    public void clear_ratios()
+                property collectionAttribute "ratios"
+                property update "true";
+    public void removeFrom_ratios(double ratios)
+                property collectionAttribute "ratios"
+                property update "true";
+    public void set_ratios(java.util.Collection ratios domain 0,* class double)
+                property collectionAttribute "ratios"
+                property update "true";
+}
+
+public class RebalanceDecision
+        property "ads.typeId" "10"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "RebalanceDecision"
+        property "de.generated" "true"
+{
+    public java.lang.Long amount
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "amount"
+                property update "true";
+    public string destination
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "destination"
+                property update "true";
+    public string from
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "from"
+                property update "true";
+    public java.lang.Long item
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "item"
+                property update "true";
+    public RebalanceDecision(java.lang.Long amount, string destination, string from, java.lang.Long item)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public RebalanceDecision()
+                property "dataio.default" "true";
+}
+
+public class Repcomponents
+        property "ads.typeId" "14"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "repcomponents"
+        property "de.generated" "true"
+{
+    public java.util.List repids domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Repid
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "repids"
+                property update "true";
+    public Repcomponents(java.util.List repids domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Repid)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Repcomponents()
+                property "dataio.default" "true";
+    public void addTo_repids(cp4admin.my_ads.ikeademo1.ikeadata.Repid repids)
+                property collectionAttribute "repids"
+                property update "true";
+    public void clear_repids()
+                property collectionAttribute "repids"
+                property update "true";
+    public void removeFrom_repids(cp4admin.my_ads.ikeademo1.ikeadata.Repid repids)
+                property collectionAttribute "repids"
+                property update "true";
+    public void set_repids(java.util.Collection repids domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Repid)
+                property collectionAttribute "repids"
+                property update "true";
+}
+
+public class Repid
+        property "ads.typeId" "15"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "repid"
+        property "de.generated" "true"
+{
+    public java.lang.Long id
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "id"
+                property update "true";
+    public double ratio
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ratio"
+                property update "true";
+    public Repid(java.lang.Long id, double ratio)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Repid()
+                property "dataio.default" "true";
+}
+
+public class ReplenishDecision
+        property "ads.typeId" "17"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "ReplenishDecision"
+        property "de.generated" "true"
+{
+    public java.lang.Long amount
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "amount"
+                property update "true";
+    public java.lang.Long item
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "item"
+                property update "true";
+    public ReplenishDecision(java.lang.Long amount, java.lang.Long item)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public ReplenishDecision()
+                property "dataio.default" "true";
+}
+
+public class Row
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "row"
+        property "de.generated" "true"
+{
+    public java.util.List cells domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Cell
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "cells"
+                property update "true";
+    public double grandTotal
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "grand total"
+                property update "true";
+    public double id
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "id"
+                property update "true";
+    public Row(java.util.List cells domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Cell, 
+        double grandTotal, 
+        double id)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Row()
+                property "dataio.default" "true";
+    public void addTo_cells(cp4admin.my_ads.ikeademo1.ikeadata.Cell cells)
+                property collectionAttribute "cells"
+                property update "true";
+    public void clear_cells()
+                property collectionAttribute "cells"
+                property update "true";
+    public void removeFrom_cells(cp4admin.my_ads.ikeademo1.ikeadata.Cell cells)
+                property collectionAttribute "cells"
+                property update "true";
+    public void set_cells(java.util.Collection cells domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Cell)
+                property collectionAttribute "cells"
+                property update "true";
+}
+
+public class StockTable
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "StockTable"
+        property "de.generated" "true"
+{
+    public java.util.List rows domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Row
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "rows"
+                property update "true";
+    public StockTable(java.util.List rows domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Row)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public StockTable()
+                property "dataio.default" "true";
+    public void addTo_rows(cp4admin.my_ads.ikeademo1.ikeadata.Row rows)
+                property collectionAttribute "rows"
+                property update "true";
+    public void clear_rows()
+                property collectionAttribute "rows"
+                property update "true";
+    public void removeFrom_rows(cp4admin.my_ads.ikeademo1.ikeadata.Row rows)
+                property collectionAttribute "rows"
+                property update "true";
+    public void set_rows(java.util.Collection rows domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Row)
+                property collectionAttribute "rows"
+                property update "true";
+}
+
+public class StoreTable
+        property "ads.typeId" "13"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "StoreTable"
+        property "de.generated" "true"
+{
+    public java.util.List rows domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Storerow
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "rows"
+                property update "true";
+    public StoreTable(java.util.List rows domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Storerow)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public StoreTable()
+                property "dataio.default" "true";
+    public void addTo_rows(cp4admin.my_ads.ikeademo1.ikeadata.Storerow rows)
+                property collectionAttribute "rows"
+                property update "true";
+    public void clear_rows()
+                property collectionAttribute "rows"
+                property update "true";
+    public void removeFrom_rows(cp4admin.my_ads.ikeademo1.ikeadata.Storerow rows)
+                property collectionAttribute "rows"
+                property update "true";
+    public void set_rows(java.util.Collection rows domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Storerow)
+                property collectionAttribute "rows"
+                property update "true";
+}
+
+public class Storedetail
+        property "ads.typeId" "12"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "storedetail"
+        property "de.generated" "true"
+{
+    public double amount
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "amount"
+                property update "true";
+    public java.lang.Long id
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "id"
+                property update "true";
+    public Storedetail(double amount, java.lang.Long id)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Storedetail()
+                property "dataio.default" "true";
+}
+
+public class Storerow
+        property "ads.typeId" "11"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "storerow"
+        property "de.generated" "true"
+{
+    public java.util.List storedetails domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Cell
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "storedetails"
+                property update "true";
+    public string storeid
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "storeid"
+                property update "true";
+    public Storerow(java.util.List storedetails domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Cell, 
+        string storeid)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Storerow()
+                property "dataio.default" "true";
+    public void addTo_storedetails(cp4admin.my_ads.ikeademo1.ikeadata.Cell storedetails)
+                property collectionAttribute "storedetails"
+                property update "true";
+    public void clear_storedetails()
+                property collectionAttribute "storedetails"
+                property update "true";
+    public void removeFrom_storedetails(cp4admin.my_ads.ikeademo1.ikeadata.Cell storedetails)
+                property collectionAttribute "storedetails"
+                property update "true";
+    public void set_storedetails(java.util.Collection storedetails domain 0,* class cp4admin.my_ads.ikeademo1.ikeadata.Cell)
+                property collectionAttribute "storedetails"
+                property update "true";
+}
+
+public class TotalsToCheck
+        property "ads.typeId" "6"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "totalsToCheck"
+        property "de.generated" "true"
+{
+    public java.util.List coreTotals domain 0,* class double
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "coreTotals"
+                property update "true";
+    public java.util.List otherTotals domain 0,* class double
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "otherTotals"
+                property update "true";
+    public TotalsToCheck(java.util.List coreTotals domain 0,* class double, 
+        java.util.List otherTotals domain 0,* class double)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public TotalsToCheck()
+                property "dataio.default" "true";
+    public void addTo_coreTotals(double coreTotals)
+                property collectionAttribute "coreTotals"
+                property update "true";
+    public void addTo_otherTotals(double otherTotals)
+                property collectionAttribute "otherTotals"
+                property update "true";
+    public void clear_coreTotals()
+                property collectionAttribute "coreTotals"
+                property update "true";
+    public void clear_otherTotals()
+                property collectionAttribute "otherTotals"
+                property update "true";
+    public void removeFrom_coreTotals(double coreTotals)
+                property collectionAttribute "coreTotals"
+                property update "true";
+    public void removeFrom_otherTotals(double otherTotals)
+                property collectionAttribute "otherTotals"
+                property update "true";
+    public void set_coreTotals(java.util.Collection coreTotals domain 0,* class double)
+                property collectionAttribute "coreTotals"
+                property update "true";
+    public void set_otherTotals(java.util.Collection otherTotals domain 0,* class double)
+                property collectionAttribute "otherTotals"
+                property update "true";
+}
+

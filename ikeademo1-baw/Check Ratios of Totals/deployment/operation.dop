@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Check Ratios of Totals">
+  <name>Check-Ratios-of-Totals</name>
+  <uuid>8e0bcc02-0a03-4894-84b1-2a429e1f8ceb</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#a0f92122-3de2-4713-b354-362a406b1361"/>
+  <targetRuleProject href="../../Check%20Ratios%20of%20Totals#161c5453-062d-4e8f-b9e0-02ed47bc5f51"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Check-Ratios-of-Totals"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

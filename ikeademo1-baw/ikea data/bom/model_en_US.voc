@@ -1,0 +1,182 @@
+
+# cp4admin.my_ads.ikeademo1.ikeadata.Cell
+cp4admin.my_ads.ikeademo1.ikeadata.Cell#concept.label = cell
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.Cell(double,double,java.lang.String)#phrase.navigation = a new {cell} where {0, amount} {1, id} {2, location}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.amount#phrase.action = set the amount of {this} to {amount}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.amount#phrase.addition_setter = add {amount} to the amount of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.amount#phrase.navigation = {amount} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.amount#phrase.subtraction_setter = subtract {amount} from the amount of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.id#phrase.action = set the id of {this} to {id}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.id#phrase.addition_setter = add {id} to the id of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.id#phrase.navigation = {id} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.id#phrase.subtraction_setter = subtract {id} from the id of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.location#phrase.action = set the location of {this} to {location}
+cp4admin.my_ads.ikeademo1.ikeadata.Cell.location#phrase.navigation = {location} of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.Cjtotals
+cp4admin.my_ads.ikeademo1.ikeadata.Cjtotals#concept.label = cjtotals
+cp4admin.my_ads.ikeademo1.ikeadata.Cjtotals.Cjtotals(java.util.List)#phrase.navigation = a new {cjtotals} where {0, cjtotals}
+cp4admin.my_ads.ikeademo1.ikeadata.Cjtotals.addTo_cjtotalses(double)#phrase.action = add {0} to the cjtotalses of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Cjtotals.cjtotalses#phrase.action = set the cjtotalses of {this} to {cjtotals}
+cp4admin.my_ads.ikeademo1.ikeadata.Cjtotals.cjtotalses#phrase.navigation = {cjtotals} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Cjtotals.clear_cjtotalses()#phrase.action = clear the cjtotalses of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Cjtotals.removeFrom_cjtotalses(double)#phrase.action = remove {0} from the cjtotalses of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.Components
+cp4admin.my_ads.ikeademo1.ikeadata.Components#concept.label = Components
+cp4admin.my_ads.ikeademo1.ikeadata.Components.Components(java.util.List,java.util.List)#phrase.navigation = a new {Components} where {0, id} {1, product ratio}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.addTo_ids(double)#phrase.action = add {0} to the ids of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.addTo_productRatio(double)#phrase.action = add {0} to the product ratios of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.clear_ids()#phrase.action = clear the ids of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.clear_productRatio()#phrase.action = clear the product ratios of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.ids#phrase.action = set the ids of {this} to {id}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.ids#phrase.navigation = {id} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.productRatio#phrase.action = set the product ratios of {this} to {product ratio}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.productRatio#phrase.navigation = {product ratio} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.removeFrom_ids(double)#phrase.action = remove {0} from the ids of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Components.removeFrom_productRatio(double)#phrase.action = remove {0} from the product ratios of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents#concept.label = Core Components
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.CoreComponents(java.util.List,double)#phrase.navigation = a new {Core Components} where {0, id} {1, product ratio}
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.addTo_ids(double)#phrase.action = add {0} to the ids of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.clear_ids()#phrase.action = clear the ids of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.ids#phrase.action = set the ids of {this} to {id}
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.ids#phrase.navigation = {id} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.productRatio#phrase.action = set the product ratio of {this} to {product ratio}
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.productRatio#phrase.addition_setter = add {product ratio} to the product ratio of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.productRatio#phrase.navigation = {product ratio} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.productRatio#phrase.subtraction_setter = subtract {product ratio} from the product ratio of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.CoreComponents.removeFrom_ids(double)#phrase.action = remove {0} from the ids of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.RatioList
+cp4admin.my_ads.ikeademo1.ikeadata.RatioList#concept.label = ratio list
+cp4admin.my_ads.ikeademo1.ikeadata.RatioList.RatioList(java.lang.String,java.util.List)#phrase.navigation = a new {ratio list} where {0, location} {1, ratio}
+cp4admin.my_ads.ikeademo1.ikeadata.RatioList.addTo_ratios(double)#phrase.action = add {0} to the ratios of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RatioList.clear_ratios()#phrase.action = clear the ratios of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RatioList.location#phrase.action = set the location of {this} to {location}
+cp4admin.my_ads.ikeademo1.ikeadata.RatioList.location#phrase.navigation = {location} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RatioList.ratios#phrase.action = set the ratios of {this} to {ratio}
+cp4admin.my_ads.ikeademo1.ikeadata.RatioList.ratios#phrase.navigation = {ratio} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RatioList.removeFrom_ratios(double)#phrase.action = remove {0} from the ratios of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision#concept.label = RebalanceDecision
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.RebalanceDecision(java.lang.Long,java.lang.String,java.lang.String,java.lang.Long)#phrase.navigation = a new {RebalanceDecision} where {0, amount} {1, destination} {2, from} {3, item}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.amount#phrase.action = set the amount of {this} to {amount}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.amount#phrase.addition_setter = add {amount} to the amount of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.amount#phrase.navigation = {amount} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.amount#phrase.subtraction_setter = subtract {amount} from the amount of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.destination#phrase.action = set the destination of {this} to {destination}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.destination#phrase.navigation = {destination} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.from#phrase.action = set the from of {this} to {from}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.from#phrase.navigation = {from} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.item#phrase.action = set the item of {this} to {item}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.item#phrase.addition_setter = add {item} to the item of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.item#phrase.navigation = {item} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.RebalanceDecision.item#phrase.subtraction_setter = subtract {item} from the item of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents
+cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents#concept.label = repcomponents
+cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents.Repcomponents(java.util.List)#phrase.navigation = a new {repcomponents} where {0, repid}
+cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents.addTo_repids(cp4admin.my_ads.ikeademo1.ikeadata.Repid)#phrase.action = add {0} to the repids of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents.clear_repids()#phrase.action = clear the repids of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents.removeFrom_repids(cp4admin.my_ads.ikeademo1.ikeadata.Repid)#phrase.action = remove {0} from the repids of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents.repids#phrase.action = set the repids of {this} to {repid}
+cp4admin.my_ads.ikeademo1.ikeadata.Repcomponents.repids#phrase.navigation = {repid} of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.Repid
+cp4admin.my_ads.ikeademo1.ikeadata.Repid#concept.label = repid
+cp4admin.my_ads.ikeademo1.ikeadata.Repid.Repid(java.lang.Long,double)#phrase.navigation = a new {repid} where {0, id} {1, ratio}
+cp4admin.my_ads.ikeademo1.ikeadata.Repid.id#phrase.action = set the id of {this} to {id}
+cp4admin.my_ads.ikeademo1.ikeadata.Repid.id#phrase.addition_setter = add {id} to the id of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Repid.id#phrase.navigation = {id} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Repid.id#phrase.subtraction_setter = subtract {id} from the id of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Repid.ratio#phrase.action = set the ratio of {this} to {ratio}
+cp4admin.my_ads.ikeademo1.ikeadata.Repid.ratio#phrase.addition_setter = add {ratio} to the ratio of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Repid.ratio#phrase.navigation = {ratio} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Repid.ratio#phrase.subtraction_setter = subtract {ratio} from the ratio of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision#concept.label = ReplenishDecision
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision.ReplenishDecision(java.lang.Long,java.lang.Long)#phrase.navigation = a new {ReplenishDecision} where {0, amount} {1, item}
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision.amount#phrase.action = set the amount of {this} to {amount}
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision.amount#phrase.addition_setter = add {amount} to the amount of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision.amount#phrase.navigation = {amount} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision.amount#phrase.subtraction_setter = subtract {amount} from the amount of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision.item#phrase.action = set the item of {this} to {item}
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision.item#phrase.addition_setter = add {item} to the item of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision.item#phrase.navigation = {item} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.ReplenishDecision.item#phrase.subtraction_setter = subtract {item} from the item of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.Row
+cp4admin.my_ads.ikeademo1.ikeadata.Row#concept.label = row
+cp4admin.my_ads.ikeademo1.ikeadata.Row.Row(java.util.List,double,double)#phrase.navigation = a new {row} where {0, cell} {1, grand total} {2, id}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.addTo_cells(cp4admin.my_ads.ikeademo1.ikeadata.Cell)#phrase.action = add {0} to the cells of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.cells#phrase.action = set the cells of {this} to {cell}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.cells#phrase.navigation = {cell} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.clear_cells()#phrase.action = clear the cells of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.grandTotal#phrase.action = set the grand total of {this} to {grand total}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.grandTotal#phrase.addition_setter = add {grand total} to the grand total of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.grandTotal#phrase.navigation = {grand total} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.grandTotal#phrase.subtraction_setter = subtract {grand total} from the grand total of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.id#phrase.action = set the id of {this} to {id}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.id#phrase.addition_setter = add {id} to the id of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.id#phrase.navigation = {id} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.id#phrase.subtraction_setter = subtract {id} from the id of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Row.removeFrom_cells(cp4admin.my_ads.ikeademo1.ikeadata.Cell)#phrase.action = remove {0} from the cells of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.StockTable
+cp4admin.my_ads.ikeademo1.ikeadata.StockTable#concept.label = Stock Table
+cp4admin.my_ads.ikeademo1.ikeadata.StockTable.StockTable(java.util.List)#phrase.navigation = a new {Stock Table} where {0, row}
+cp4admin.my_ads.ikeademo1.ikeadata.StockTable.addTo_rows(cp4admin.my_ads.ikeademo1.ikeadata.Row)#phrase.action = add {0} to the rows of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.StockTable.clear_rows()#phrase.action = clear the rows of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.StockTable.removeFrom_rows(cp4admin.my_ads.ikeademo1.ikeadata.Row)#phrase.action = remove {0} from the rows of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.StockTable.rows#phrase.action = set the rows of {this} to {row}
+cp4admin.my_ads.ikeademo1.ikeadata.StockTable.rows#phrase.navigation = {row} of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.StoreTable
+cp4admin.my_ads.ikeademo1.ikeadata.StoreTable#concept.label = Store Table
+cp4admin.my_ads.ikeademo1.ikeadata.StoreTable.StoreTable(java.util.List)#phrase.navigation = a new {Store Table} where {0, storerow}
+cp4admin.my_ads.ikeademo1.ikeadata.StoreTable.addTo_rows(cp4admin.my_ads.ikeademo1.ikeadata.Storerow)#phrase.action = add {0} to the storerows of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.StoreTable.clear_rows()#phrase.action = clear the storerows of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.StoreTable.removeFrom_rows(cp4admin.my_ads.ikeademo1.ikeadata.Storerow)#phrase.action = remove {0} from the storerows of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.StoreTable.rows#phrase.action = set the storerows of {this} to {storerow}
+cp4admin.my_ads.ikeademo1.ikeadata.StoreTable.rows#phrase.navigation = {storerow} of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.Storedetail
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail#concept.label = storedetail
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail.Storedetail(double,java.lang.Long)#phrase.navigation = a new {storedetail} where {0, amount} {1, id}
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail.amount#phrase.action = set the amount of {this} to {amount}
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail.amount#phrase.addition_setter = add {amount} to the amount of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail.amount#phrase.navigation = {amount} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail.amount#phrase.subtraction_setter = subtract {amount} from the amount of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail.id#phrase.action = set the id of {this} to {id}
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail.id#phrase.addition_setter = add {id} to the id of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail.id#phrase.navigation = {id} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Storedetail.id#phrase.subtraction_setter = subtract {id} from the id of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.Storerow
+cp4admin.my_ads.ikeademo1.ikeadata.Storerow#concept.label = storerow
+cp4admin.my_ads.ikeademo1.ikeadata.Storerow.Storerow(java.util.List,java.lang.String)#phrase.navigation = a new {storerow} where {0, storecell} {1, storeid}
+cp4admin.my_ads.ikeademo1.ikeadata.Storerow.addTo_storedetails(cp4admin.my_ads.ikeademo1.ikeadata.Cell)#phrase.action = add {0} to the storecells of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Storerow.clear_storedetails()#phrase.action = clear the storecells of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Storerow.removeFrom_storedetails(cp4admin.my_ads.ikeademo1.ikeadata.Cell)#phrase.action = remove {0} from the storecells of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Storerow.storedetails#phrase.action = set the storecells of {this} to {storecell}
+cp4admin.my_ads.ikeademo1.ikeadata.Storerow.storedetails#phrase.navigation = {storecell} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.Storerow.storeid#phrase.action = set the storeid of {this} to {storeid}
+cp4admin.my_ads.ikeademo1.ikeadata.Storerow.storeid#phrase.navigation = {storeid} of {this}
+
+# cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck#concept.label = totals to check
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.TotalsToCheck(java.util.List,java.util.List)#phrase.navigation = a new {totals to check} where {0, core total} {1, other total}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.addTo_coreTotals(double)#phrase.action = add {0} to the core totals of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.addTo_otherTotals(double)#phrase.action = add {0} to the other totals of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.clear_coreTotals()#phrase.action = clear the core totals of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.clear_otherTotals()#phrase.action = clear the other totals of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.coreTotals#phrase.action = set the core totals of {this} to {core total}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.coreTotals#phrase.navigation = {core total} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.otherTotals#phrase.action = set the other totals of {this} to {other total}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.otherTotals#phrase.navigation = {other total} of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.removeFrom_coreTotals(double)#phrase.action = remove {0} from the core totals of {this}
+cp4admin.my_ads.ikeademo1.ikeadata.TotalsToCheck.removeFrom_otherTotals(double)#phrase.action = remove {0} from the other totals of {this}
