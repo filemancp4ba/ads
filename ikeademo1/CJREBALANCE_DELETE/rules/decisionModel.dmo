@@ -83,7 +83,7 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="StoreInventories"/>
-                <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="AllStores"/>
+                <input bomType="java.lang.String" collection="true" name="AllStores"/>
                 <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="Merger"/>
                 <rule defaultRule="false" href="node_6/Merger%2001.drl" kind="BusinessRule" name="Merger"/>
             </ruleset>
@@ -108,11 +108,11 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="cp4admin.my_ads.ikeademo1.ikeadata.StockTable" collection="false" name="StockTable"/>
-                <output bomType="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable" collection="true" name="AllStores"/>
+                <output bomType="java.lang.String" collection="true" name="AllStores"/>
                 <rule defaultRule="false" href="node_8/AllStores.drl" kind="BusinessRule" name="AllStores"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_8_ii" name="AllStores" typeRef="cp4admin.my_ads.ikeademo1.ikeadata.StoreTable[]"/>
+        <variable id="node_8_ii" name="AllStores" typeRef="java.lang.String[]"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
